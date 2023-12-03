@@ -71,7 +71,7 @@ class Checker:
                 "B_end_pos":    node2.end_pos,
             })
 
-        self.similarity = num_of_same_nodes / min(len(self.flattened1), len(self.flattened2))
+        self.similarity = num_of_same_nodes**2 / len(self.flattened1) / len(self.flattened2)
 
     # The optimized version
     def check(self):
