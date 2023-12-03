@@ -9,11 +9,14 @@
 git clone git@github.com:AnubisLMS/Mayat.git
 ```
 
-2. Install dependencies and install Mayat
+2. Install dependencies
 ```
 cd Mayat
 pip install -r requirements_dev.txt
-python setup.py install
+```
+Install Mayat
+```
+pip install .
 ```
 
 3. Install `tree-sitter` parsers
